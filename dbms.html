@@ -365,30 +365,53 @@ Here, <code>StudentID</code>, <code>Email</code>, and <code>Phone</code> are all
 </details>
 <hr>
   <details>
-  <summary>Q. Show the use of SQL commands like <code>CREATE,SELECT,INSERT,etc</code>.</summary>
-  <p><strong>CODE:</strong></p>
+  <summary>Q. Write SQL commands to perform the following operations:</code>.</summary>
+  <p class="question">
+  a.Create a table named students with the fields: Id, Name, Class, and Marks.<br><br>
+  <strong>CODE:</strong>
+    <pre>
+  CREATE TABLE students (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(50),
+    Class VARCHAR(10),
+    Marks INT(3)
+	);</pre>
+	<strong>OUTPUT:</strong><br><img src="images\create.jpg"><br></p>
+  <p class="question">b.Insert records into the students table with appropriate values.<br><br>
+  <strong>CODE:</strong>
+	<pre>
+  INSERT INTO students (Name, Class, Marks) 
+   VALUES ('Anita', '12A', 78),
+   ('Ravi', '12B', 82),
+   ('Sita', '12C', 90),
+   ('Amit', '12D', 65),
+   ('Neha', '12E', 88);
+	</pre>
+	<strong>OUTPUT:</strong><br><img src="images\insert.jpg"><br></p>
+
+  <p class="question">c.Display all records from the students table.<br><br>
+  <strong>CODE:</strong>
   <pre>
-  CREATE DATABASE CompanyDB;
-  USE DATABASE CompanyDB;
-  CREATE TABLE Employees ( EmployeeID INT PRIMARY KEY, FirstName VARCHAR(50), LastName VARCHAR(50),Age INT,Department VARCHAR(50));
-
-  INSERT INTO Employees (EmployeeID, FirstName, LastName, Age, Department)
-  VALUES 
-        (1, 'Ram', 'Singh', 30, 'HR'),
-        (2, 'Virat', 'Smith', 25, 'IT'),
-        (3, 'Micheal', 'Jordon', 40, 'Finance'),
-        (4, 'Sherlock', 'Holmes', 35, 'Marketing');
-  SELECT * FROM Employees
-  WHERE EmployeeID = 1;
-
-  </pre>
-  <p><strong>OUTPUT:</strong><br><img src="images\create_insert_select.jpg"></p>
-  <p><strong>WHAT IT DOES:</strong>
-  <br>The CREATE command is used to create DATABASES, TABLES, etc. 
-  <br>The INSERT command is used to add new records into the tables. eg: if i want to add data of new employee i'd use INSERT command.
-  <br>The SELECT command is used to search for the records that satisfy the provided condition. In this case where EmployeeID = 1 .i.e it shows all the deatil of the employee whose id is 1.
-  
-  </p>
+  SELECT * FROM students;
+	</pre>
+	<strong>OUTPUT:</strong><br><img src="images\select.jpg"><br></p>
+  <p class="question">d.Update the marks of a student whose name is 'Anita' to 85.<br>
+  <pre>
+   UPDATE students
+   SET Marks = 85
+   WHERE Name = 'Anita';
+	</pre>
+	<strong>OUTPUT:</strong><br><img src="images\update.jpg"><br></p>
+  <p class="question">e.Delete the record of the student with id = 3.
+  <pre>
+  INSERT INTO students (Name, Class, Marks) 
+   VALUES ('Anita', '12A', 78),
+   ('Ravi', '12B', 82),
+   ('Sita', '12C', 90),
+   ('Amit', '12D', 65),
+   ('Neha', '12E', 88);
+	</pre>
+	<strong>OUTPUT:</strong><br><img src="images\delete.jpg"><br></p>
   </details>
 <hr>
 

@@ -7,7 +7,10 @@
     font-size: 22px;
 	font-weight:bold;
    }
-   
+   .question{
+    font-size: 22px;
+	font-weight:bold;
+   }
    .answer{
     font-size: 18px;
 	padding-left:20;
@@ -365,9 +368,9 @@ Here, <code>StudentID</code>, <code>Email</code>, and <code>Phone</code> are all
 </details>
 <hr>
   <details>
-  <summary>Q. Write SQL commands to perform the following operations:</code>.</summary>
+  <summary>Q. Write SQL commands to perform the following operations:</code>-</summary>
   <p class="question">
-  a.Create a table named students with the fields: Id, Name, Class, and Marks.<br><br>
+  a.Create a table named students with the fields: Id, Name, Class, and Marks.<br></p><p>
   <strong>CODE:</strong>
     <pre>
   CREATE TABLE students (
@@ -377,7 +380,7 @@ Here, <code>StudentID</code>, <code>Email</code>, and <code>Phone</code> are all
     Marks INT(3)
 	);</pre>
 	<strong>OUTPUT:</strong><br><img src="images\create.jpg"><br></p>
-  <p class="question">b.Insert records into the students table with appropriate values.<br><br>
+  <p class="question">b.Insert records into the students table with appropriate values.<br></p><p>
   <strong>CODE:</strong>
 	<pre>
   INSERT INTO students (Name, Class, Marks) 
@@ -389,20 +392,20 @@ Here, <code>StudentID</code>, <code>Email</code>, and <code>Phone</code> are all
 	</pre>
 	<strong>OUTPUT:</strong><br><img src="images\insert.jpg"><br></p>
 
-  <p class="question">c.Display all records from the students table.<br><br>
+  <p class="question">c.Display all records from the students table.<br></p><p>
   <strong>CODE:</strong>
   <pre>
   SELECT * FROM students;
 	</pre>
 	<strong>OUTPUT:</strong><br><img src="images\select.jpg"><br></p>
-  <p class="question">d.Update the marks of a student whose name is 'Anita' to 85.<br>
+  <p class="question">d.Update the marks of a student whose name is 'Anita' to 85.<br></p><p>
   <pre>
    UPDATE students
    SET Marks = 85
    WHERE Name = 'Anita';
 	</pre>
 	<strong>OUTPUT:</strong><br><img src="images\update.jpg"><br></p>
-  <p class="question">e.Delete the record of the student with id = 3.
+  <p class="question">e.Delete the record of the student with id = 3.<br></p><p>
   <pre>
   INSERT INTO students (Name, Class, Marks) 
    VALUES ('Anita', '12A', 78),
